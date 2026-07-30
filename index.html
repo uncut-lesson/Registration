@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Basic Course Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-content">
+          <div class="logo-section" aria-label="Course logo">
+            <img src="assets/Logo.png" alt="Course logo" />
+          </div>
+          <p class="eyebrow">Registration open</p>
+          <h1 id="page-title">Free Basic Course</h1>
+          <p class="hero-copy">
+            Join our free basic course and start learning with simple, beginner-friendly lessons.
+            Fill the form once and we will contact you through Gmail or WhatsApp.
+          </p>
+          <div class="hero-actions">
+            <a class="hero-button" href="#registration-form">Register Now</a>
+            <a
+              class="hero-button secondary"
+              href="https://alokmistri.github.io/uncut_lesson/"
+              target="_blank"
+              rel="noopener"
+            >
+              Visit Website for any course
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid" aria-label="Course registration">
+        <div class="course-info">
+          <div class="offer-box">
+            <span>Tally Prime + GST Course</span>
+            <strong>Only at 299</strong>
+          </div>
+
+          <h2>Course Details</h2>
+          <ul>
+            <li>Free basic course for beginners</li>
+            <li>Simple learning format</li>
+            <li>Updates will be shared on Gmail or WhatsApp</li>
+            <li>Limited seats, register early</li>
+          </ul>
+
+          <div class="notice">
+            Your details will only be used for course communication.
+          </div>
+        </div>
+
+        <form class="registration-form" id="registration-form">
+          <h2>Register Here</h2>
+
+          <label for="course">Select Course</label>
+          <select id="course" name="course" required>
+            <option value="">Select course</option>
+            <option value="MS-Basic (Free for Limited Time)">
+              MS-Basic (Free for Limited Time)
+            </option>
+            <option value="Advanced Excel" data-website-only="true">
+              Advanced Excel (Visit Website)
+            </option>
+            <option value="Tally Prime (Package 299 Lifetime Access)">
+              Tally Prime (Package 299 Lifetime Access)
+            </option>
+            <option value="Power BI" data-website-only="true">Power BI (Visit Website)</option>
+            <option value="SAP FICO" data-website-only="true">SAP FICO (Visit Website)</option>
+            <option value="SAP 4 HANA" data-website-only="true">SAP 4 HANA (Visit Website)</option>
+            <option value="Microsoft Peachtree" data-website-only="true">
+              Microsoft Peachtree (Visit Website)
+            </option>
+          </select>
+
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+
+          <label for="gmail">Gmail</label>
+          <input
+            id="gmail"
+            name="gmail"
+            type="email"
+            autocomplete="email"
+            placeholder="example@gmail.com"
+            required
+          />
+
+          <label for="whatsapp">WhatsApp Number</label>
+          <input
+            id="whatsapp"
+            name="whatsapp"
+            type="tel"
+            inputmode="tel"
+            autocomplete="tel"
+            placeholder="10 digit Indian WhatsApp number"
+            required
+          />
+
+          <label for="state">State</label>
+          <select id="state" name="state" autocomplete="address-level1" required>
+            <option value="">Select state</option>
+          </select>
+
+          <label for="city">City</label>
+          <select id="city" name="city" autocomplete="address-level2" required disabled>
+            <option value="">Select state first</option>
+          </select>
+
+          <label for="qualification">Qualification</label>
+          <select id="qualification" name="qualification" required>
+            <option value="">Select qualification</option>
+            <option value="Secondary">Secondary</option>
+            <option value="Higher Secondary">Higher Secondary</option>
+            <option value="Graduate">Graduate</option>
+            <option value="Housewife">Housewife</option>
+            <option value="Others">Others</option>
+          </select>
+
+          <button type="submit" id="submit-button">Submit Registration</button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
